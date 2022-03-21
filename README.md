@@ -18,4 +18,8 @@ I will try to describe each one in more detail. In general, the repository shows
 ### Starting and creating an application
 The initial stage of any development. Here I will not touch on setting the expo or anything like that. Everything I write below assumes that you have little knowledge of working with react native( next rn ).
 We start with the installation. Our main platform will be NativeBase. It adds ready-made native components to rn.
-<p><code>expo init my-app --template @native-base/expo-template</code>
+<p><code>expo init my-app --template @native-base/expo-template</code><p>
+Perhaps. This concludes our first step. It was easy. But for a clear sequence of actions, it is necessary to separate it with another step.
+---
+### Installing the necessary libraries and extensions
+
