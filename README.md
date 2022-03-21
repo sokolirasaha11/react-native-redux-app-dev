@@ -1,7 +1,6 @@
 # bookmark app
 ---
 ### Hello young developers. This repository contains:
-- react
 - react native
 - native base
 - redux
@@ -18,8 +17,32 @@ I will try to describe each one in more detail. In general, the repository shows
 ### Starting and creating an application
 The initial stage of any development. Here I will not touch on setting the expo or anything like that. Everything I write below assumes that you have little knowledge of working with react native( next rn ).
 We start with the installation. Our main platform will be NativeBase. It adds ready-made native components to rn.
-<p><code>expo init my-app --template @native-base/expo-template</code><p>
+<div>
+<p><code>expo init my-app --template @native-base/expo-template</code><p></div>
 Perhaps. This concludes our first step. It was easy. But for a clear sequence of actions, it is necessary to separate it with another step.
+
 ---
-### Installing the necessary libraries and extensions
+### Installing the necessary libraries and extensions.
+Since we have thought through the system of our application in advance, we can install all the necessary libraries in advance. Of course, we can do it gradually, but...
+#### redux / react-redux / redux-persist / redux-thunk
+<p><code>npm install redux react-redux redux-thunk redux-persist</code><p>
+  
+This is all that will allow us to build a good state of our application, which will be saved on the device. More details will come later.
+  
+  <p>
+  
+#### react-navigation / react-navigation-stack
+  
+<p><code>npm install react-navigation react-navigation-stack</code><p>
+  
+  
+
+This will allow us to build the basic navigation in the application.
+  
+  
+---
+### Stage 3. Let the difficulties begin...
+This stage symbolizes the beginning of difficulties. I will not describe in detail each action. But to be brief and to the point, now we are creating several mock-up screens of the application.
+  
+The layouts will now look basic and the code I am attaching here may differ from the code in the repository. You may ask me: "Why can the code be different?". And I will immediately answer your question. The code may vary because the final step in this project is to improve the application. I apologize in advance, but if you follow strictly according to this instruction, then everything will work for you.
 
