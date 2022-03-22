@@ -55,4 +55,5 @@ Next, in the scr folder, create the following folders:
   - store / the folder will contain our redux and its components
   - navigation / the folder will contain the navigation screens. In general, it was possible not to create a separate folder for our project, but...
   
+  After creating the folders, I decided to immediately create page elements, but then I realized that this would lead to future refactoring and changed my mind and moved on to creating my application store.
  
