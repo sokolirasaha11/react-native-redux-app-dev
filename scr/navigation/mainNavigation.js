@@ -6,7 +6,7 @@ import { BodyScreen } from '../screens/BodyScreen';
 import { CreateNode } from '../screens/FavoritesBodyScreen';
 
 const Stack = createNativeStackNavigator();
-export function AppNavigation() {
+export function MainNavigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Body">
