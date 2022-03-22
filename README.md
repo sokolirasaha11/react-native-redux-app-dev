@@ -46,3 +46,14 @@ This stage symbolizes the beginning of difficulties. I will not describe in deta
   
 The layouts will now look basic and the code I am attaching here may differ from the code in the repository. You may ask me: "Why can the code be different?". And I will immediately answer your question. The code may vary because the final step in this project is to improve the application. I apologize in advance, but if you follow strictly according to this instruction, then everything will work for you.
 
+- Create folder - scr
+We will store all components and scripts in this folder. This is the base.
+  
+Next, in the scr folder, create the following folders:
+
+  - screens / the folder will contain the screens and functions needed for the screens to work
+  - store / the folder will contain our redux and its components
+  - navigation / the folder will contain the navigation screens. In general, it was possible not to create a separate folder for our project, but...
+  
+  After creating the folders, I decided to immediately create page elements, but then I realized that this would lead to future refactoring and changed my mind and moved on to creating my application store.
+ 
