@@ -7,6 +7,7 @@ import { noteReduser } from './redusers/noteReducer';
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
+  whitelist: ['note', 'count_note', 'counst_fav']
 };
 
 const rootReducer = combineReducers({

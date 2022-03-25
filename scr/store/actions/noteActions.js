@@ -1,11 +1,11 @@
 // In this file, we create actions that will change the redux and will be called in the pages of the application.
 import { ADD_NOTE, DELETE_NOTE, EDIT_NOTE, ADD_FAVORITES_NOTE, DELETE_FAVORITES_NOTE } from "../type";
 // The action that creates the note
-export const addNote = (infoNewNote) => {
-    return {
+export const addNote = infoNewNote => dispatch => {
+    dispatch ({
         type: ADD_NOTE,
         payload: infoNewNote, // infoNewNote - An array that contains all the information for the post
-    }
+    })
 }
 // Action that deletes a note
 export const dellNote = (id) => {
