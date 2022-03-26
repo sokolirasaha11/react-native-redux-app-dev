@@ -23,8 +23,8 @@ export const CreateNote = ({ navigation }) => {
         <NativeBaseProvider>
             <Box flex={1} bg='cyan.800' alignItems='center'>
                 <Text mt={10} ml={2} mr={2} fontSize='30' color='cyan.50'>CREATE NOTE</Text>
-                <Input onChangeText={setHeader} mt={5} placeholder="HEADER NOTE" w="75%" maxWidth="300px">{valueHeader}</Input>
-                <TextArea onChangeText={setText} mt={3} placeholder="TEXT NOTE" flex={1} maxHeight='450px' w="75%" maxWidth="300px">{valueText}</TextArea>
+                <Input onChangeText={setHeader} fontSize={25} borderColor='cyan.800' color='cyan.50' mt={5} placeholder="HEADER NOTE" w="75%" maxWidth="300px">{valueHeader}</Input>
+                <TextArea onChangeText={setText} borderColor='cyan.800' color='cyan.50' fontSize={20} mt={3} placeholder="TEXT NOTE" flex={1} maxHeight='450px' w="75%" maxWidth="300px">{valueText}</TextArea>
                 <HStack mt={3} space={10}>
                     <Button onPress={() => navigation.navigate('Body')}>Cancel</Button>
                     <Button onPress={() => {dispatch(addNote({

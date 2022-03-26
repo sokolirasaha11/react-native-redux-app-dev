@@ -45,23 +45,28 @@ export const noteReduser = (state = initalState, action) => {
             }
         case ADD_FAVORITES_NOTE:
             const fav_add_note = state.note.map(n => {
-                if (note.id === action.payload) {
+                if (n.id === action.payload) {
+                    n.header = n.header
+                    n.date = n.date
+                    n.text = n.text
                     n.favorites = true
                 }
                 return n
             })
             return {
-                ...state, note, counst_fav: state.counst_fav + 1
+                ...state, 
+                note: fav_add_note, 
+                counst_fav: state.counst_fav + 1
             }
         case DELETE_FAVORITES_NOTE:
             const fav_dell_note = state.note.map(n => {
-                if (note.id === action.payload) {
+                if (n.id === action.payload) {
                     n.favorites = false
                 }
                 return n
             })
             return {
-                ...state, note, counst_fav: state.counst_fav + 1
+                ...state, note: fav_dell_note, counst_fav: state.counst_fav - 1
             }
         default: return state
     }
