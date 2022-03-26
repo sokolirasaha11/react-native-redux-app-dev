@@ -85,6 +85,6 @@ In the reducer, I have several examples of its use, but to learn more about it, 
   
   
   
-#The repository is constantly updated.
+# The repository is constantly updated.
   
  
